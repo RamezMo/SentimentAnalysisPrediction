@@ -8,7 +8,7 @@ import os
 model_path = os.path.join('model.keras')
 model = tf.keras.models.load_model(model_path)
 
-tokenizer_path = os.path.join('models', 'tokenizer.pickle')
+tokenizer_path = os.path.join('tokenizer.pickle')
 tokenizer = pickle.load(open(tokenizer_path, 'rb'))
 
 # Preprocess user input text
